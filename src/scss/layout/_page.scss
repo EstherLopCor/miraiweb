@@ -1,14 +1,10 @@
-// body {
-//   height: 100vh;
-//   background-color: $color-primary;
-//   font-family: $font-main;
-// }
 .page {
+  font-family: $font-main;
   &__article {
     display: flex;
     flex-direction: row;
     margin: 3rem 15em 3em 10em;
-    font-family: $font-main;
+
     &--container {
       display: flex;
       flex-direction: column;
@@ -44,6 +40,35 @@
     }
     &--btn_chevron {
       margin-left: 10px;
+    }
+  }
+  &__benefits {
+    background-color: $color-secondary;
+    color: $color-primary;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--title {
+      text-align: center;
+      width: 400px;
+      margin: 20px 0 0 0;
+    }
+    &--list {
+      list-style: none;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+    }
+    &--listunit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 30px;
+    }
+    &--icon {
+      font-size: 50px;
     }
   }
 }
