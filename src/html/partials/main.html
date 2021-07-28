@@ -1,40 +1,32 @@
 <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <include
-        src="./link.html"
-        aClass="link__adalab"
-        text="Adalab"
-        url="https://adalab.es"
-      ></include>
-    </li>
-    <li>
-      <include src="./link.html" text="Más info del starter kit" url="./more-info.html"></include>
-    </li>
-  </ul>
+  <article class="page__article">
+    <div class="page__article--photo"></div>
+    <!-- <img src="./assets/images/restaurant.jpg" alt="restaurant" class="page__article--photo"> -->
+    <div class="page__article--container">
+    <h3 class="page__article--why">Why do we use it</h3>
+    <h1 class="page__article--title">What is Lorem Ipsum</h1>
+    <p class="page__article--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quas, deleniti, laboriosam maxime temporibus pariatur nemo suscipit ab enim odio rerum necessitatibus error. Consequatur suscipit, unde laborum ratione esse mollitia!</p>
+    <button class="page__article--btn">Más información <span class="page__article--btn_chevron"><i class="fas fa-chevron-right"></i></span></button>
+  </div>
+  </article>
+  <section>
+    <h2>Disfrute de las ventajas de reservar en la web</h2>
+    <ul>
+      <li>Aparcamiento gratuito
+      <li>Piscina</li>
+      <li>Alquiler de bicicletas</li> 
+      <li> Wifi en todo el establecimiento prepago</li>
+    </ul>
+  </section>
+  <section>
+    <img src="./assets/images/adults_only.jpg" alt="Adults only">
+    <img src="./assets/images/spa.jpg" alt="Spa & Wellness">  
+    <img src="./assets/images/cycling.jpg" alt="Cycling tourism">  
+    <img src="./assets/images/all_inclusive.jpg" alt="All inclusive">  
+    <img src="./assets/images/mice.jpg" alt="MICE">  
+    <img src="./assets/images/beachfront.jpg" alt="Beachfront">  
+    <img src="./assets/images/families.jpg" alt="Families">  
+   
+  </section>
+  
 </main>
