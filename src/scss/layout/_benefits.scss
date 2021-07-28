@@ -1,0 +1,29 @@
+.benefits {
+  background-color: $color-secondary;
+  color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    text-align: center;
+    width: 400px;
+    margin: 20px 0 0 0;
+  }
+  &__list {
+    list-style: none;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  &__listunit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+  }
+  &__icon {
+    font-size: 50px;
+    margin-bottom: 2px;
+  }
+}

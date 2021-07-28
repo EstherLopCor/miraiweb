@@ -1,0 +1,77 @@
+.section {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  &__adults {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+    //height: 30vh;
+    background-image: url(..//images/adults_only.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__spa {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 100%;
+    //height: 30vh;
+    background-image: url(..//images/spa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__cycling {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    width: 100%;
+    // height: 30vh;
+    background-image: url(..//images/cycling.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__all {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    width: 100%;
+    // height: 30vh;
+    background-image: url(..//images/all_inclusive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__mice {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    width: 100%;
+    //height: 30vh;
+    background-image: url(..//images/mice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__beach {
+    grid-column: 3/4;
+    grid-row: 3/5;
+    width: 100%;
+    //height: 30vh;
+    background-image: url(..//images/beachfront.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__families {
+    grid-column: 1/4;
+    grid-row: 5/6;
+    width: 100%;
+    //height: 30vh;
+    background-image: url(..//images/families.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
