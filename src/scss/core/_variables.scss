@@ -4,3 +4,10 @@ $font-main: "Roboto", sans-serif;
 // colors
 $color-primary: #ffffff;
 $color-secondary: rgb(0, 0, 0);
+
+// images
+@mixin background-images {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
