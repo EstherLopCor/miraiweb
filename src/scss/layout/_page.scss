@@ -33,7 +33,10 @@
     }
     &--btn {
       background-color: $color-primary;
+      color: $color-secondary;
+      border: $color-secondary 2px solid;
       text-transform: uppercase;
+      text-decoration: none;
       border-radius: 50px;
       width: 200px;
       padding: 10px;
@@ -42,4 +45,44 @@
       margin-left: 10px;
     }
   }
+}
+.modal-contenido {
+  background-color: $color-primary;
+  border: $color-secondary 5px solid;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+
+  &__content {
+    background-color: $color-primary;
+    border: $color-secondary 5px solid;
+    width: 300px;
+    padding: 30px 20px 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    left: 20px;
+  }
+  &__close {
+    position: absolute;
+    left: 275px;
+    top: 0px;
+    color: $color-secondary;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+#miModal:target {
+  opacity: 1;
+  pointer-events: auto;
 }
