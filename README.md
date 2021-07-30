@@ -19,7 +19,7 @@ npm install
 npm start
 ```
 
-También puedes ver el resultado en el siguiente [enlace](estherlopcor.github.io/miraiweb/)
+También puedes ver el resultado en el siguiente [enlace](https://estherlopcor.github.io/miraiweb/)
 
 
 ### Tecnologías usadas
