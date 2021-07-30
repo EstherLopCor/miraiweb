@@ -12,7 +12,8 @@
       margin-left: 2em;
     }
     &--photo {
-      width: 2500px;
+      min-width: 300px;
+      max-width: 300px;
       background-image: url(..//images/restaurant.jpg);
       background-size: cover;
       background-repeat: no-repeat;
@@ -46,20 +47,16 @@
     }
   }
 }
-.modal-contenido {
-  background-color: $color-primary;
-  border: $color-secondary 5px solid;
-  width: 300px;
-  padding: 10px 20px;
-  margin: 20% auto;
-  position: relative;
+
+.modalwrapper {
+  height: 50px;
 }
 .modal {
-  position: fixed;
-  top: 0;
+  position: relative;
+  top: -220px;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -20px;
   opacity: 0;
   pointer-events: none;
   transition: all 1s;
@@ -67,8 +64,9 @@
   &__content {
     background-color: $color-primary;
     border: $color-secondary 5px solid;
+    border-radius: 7px;
     width: 300px;
-    padding: 30px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
     margin: 20% auto;
     position: relative;
     left: 20px;

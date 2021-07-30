@@ -11,3 +11,8 @@ $color-secondary: rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-position: center;
 }
+@mixin section-text {
+  padding: 0 15px 15px;
+  display: flex;
+  align-items: flex-end;
+}
