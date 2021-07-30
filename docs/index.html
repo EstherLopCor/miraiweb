@@ -3,65 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
+    <title>Mirai</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/d70cd46b63.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
     <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
+      <header >
+        <h1 class="page__text">Lorem Ipsum</h1>
       </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <main class="page">
+        <article class="page__article">
+          <div class="page__article--photo"></div>
+          <div class="page__article--container">
+          <h3 class="page__article--why">Why do we use it</h3>
+          <h1 class="page__article--title">What is Lorem Ipsum</h1>
+          <p class="page__article--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quas, deleniti, laboriosam maxime temporibus pariatur nemo suscipit ab enim odio rerum necessitatibus error. Consequatur suscipit, unde laborum ratione esse mollitia!</p>
+      <div class="modalwrapper">
+          <a href="#miModal" class="page__article--btn" >Más información <span class="page__article--btn_chevron"><i class="fas fa-chevron-right"></i></span></a>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
+          <div id="miModal" class="modal">
+            <div class="modal__content">
+              <a class="modal__close" href="#">X</a>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum assumenda ea quos. Obcaecati quaerat.</p>
+            </div>  
+          </div>
+        </div>
+        </div>
+        </article>
+        
+        
       </main>
 
+      <section class="benefits">
+          <h2 class="benefits__title">Disfrute de las ventajas de reservar en la web</h2>
+          <ul class="benefits__list">
+            
+            <li class="benefits__listunit"><span class="benefits__icon"><i class="fas fa-car"></i></i></span>Aparcamiento gratuito</li>
+           
+            <li class="benefits__listunit"><span class="benefits__icon"><i class="fas fa-swimmer"></span></i>Piscina</li>
+           
+            <li class="benefits__listunit"><span class="benefits__icon"><i class="fas fa-bicycle"></i></span>Alquiler de bicicletas</li> 
+           
+            <li class="benefits__listunit"><span class="benefits__icon"><i class="fas fa-wifi"></i></span> Wifi en todo el establecimiento prepago</li>
+          </ul>
+        </section>
+      <section class="section">
+        <p class="section__adults">Adults only</p>
+        <p class="section__spa">Spa & Wellness</p>
+        <p class="section__cycling">Cycling tourism</p>
+        <p class="section__all">All inclusive</p>
+        <p class="section__mice">Mice</p>
+        <p class="section__beach">Beachfront</p>
+        <p class="section__families">Families</p>
+          
+        </section>
       <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
+        
       </footer>
 
+    
     </div>
     <script src="./assets/js/main.js"></script>
   </body>
