@@ -1,10 +1,12 @@
-
-
 # Maquetación de página web
 
 Hola! este mi repositorio creado para mostrar un ejemplo de maquetación de una página web hotelera tipo realizada a partir de un diseño dado.
 
+**\*NOTA**
+Esta página está diseñada para verse en navegador, no cuenta con diseño responsive
+
 ### Pasos para ver el proyecto
+
 1. Descarga este repositorio
 2. **Abre una terminal** en la carpeta raíz de tu repositorio.
 3. **Instala las dependencias** locales ejecutando en la terminal el comando:
@@ -21,7 +23,6 @@ npm start
 
 También puedes ver el resultado en el siguiente [enlace](https://estherlopcor.github.io/miraiweb/)
 
-
 ### Tecnologías usadas
 
 Para hacer este proyecyo he usado HTML, CSS, Bootstrap, gulp y JS.
@@ -31,7 +32,6 @@ Para hacer este proyecyo he usado HTML, CSS, Bootstrap, gulp y JS.
 - Este proyecto está maquetado usando la metodología BEM para que sea más sencillo de leer.
 - Las diferentes secciones de la página están separadas por partials para poder ver el código concreto de un solo vistazo
 - He creado y usado diferentes variables y mixins
-
 
 ### Estructura de carpetas
 
@@ -45,7 +45,7 @@ src
  ├─ images
  |  ├─ logo.jpg
  |  └─ etc
- ├─ js 
+ ├─ js
  |  └─ main.js
  ├─ scss
  |  ├─ components
@@ -54,6 +54,7 @@ src
  |  └─ pages
 
 ```
- ### ¿Dudas o comentarios?
- 
- Puedes escribirme ;)
+
+### ¿Dudas o comentarios?
+
+Puedes escribirme ;)

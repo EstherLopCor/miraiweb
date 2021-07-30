@@ -3,7 +3,7 @@
   &__article {
     display: flex;
     flex-direction: row;
-    margin: 3rem 15em 3em 10em;
+    margin: 3rem 20em 3em 20em;
 
     &--container {
       display: flex;
@@ -29,8 +29,9 @@
       margin-bottom: 1em;
     }
     &--text {
-      font-size: 16px;
+      font-size: 14px;
       margin-bottom: 1em;
+      font-weight: 300;
     }
     &--btn {
       background-color: $color-primary;
