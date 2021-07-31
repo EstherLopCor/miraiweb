@@ -49,39 +49,45 @@
   }
 }
 
-.modalwrapper {
-  height: 50px;
-}
-.modal {
-  position: relative;
-  top: -220px;
-  right: 0;
-  bottom: 0;
-  left: -20px;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 1s;
+// VENTANA MODAL
 
-  &__content {
-    background-color: $color-primary;
-    border: $color-secondary 5px solid;
-    border-radius: 7px;
-    width: 300px;
-    padding: 20px 20px 10px 20px;
-    margin: 20% auto;
-    position: relative;
-    left: 20px;
-  }
-  &__close {
-    position: absolute;
-    left: 275px;
-    top: 0px;
-    color: $color-secondary;
-    text-decoration: none;
-    font-weight: 700;
-  }
+.content {
+  text-transform: none;
 }
-#miModal:target {
-  opacity: 1;
-  pointer-events: auto;
+
+.modalContainer {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  //padding-top: -250px;
+  left: 650px;
+  top: 300px;
+  height: 300px;
+  width: 300px;
+  overflow: auto;
+}
+
+.modalContainer .modal-content {
+  background-color: $color-primary;
+  border: $color-secondary 5px solid;
+  border-radius: 7px;
+  width: 300px;
+  padding: 20px 20px 10px 20px;
+  position: absolute;
+}
+
+.modalContainer .close {
+  position: absolute;
+  left: 275px;
+  top: 0px;
+  color: $color-secondary;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

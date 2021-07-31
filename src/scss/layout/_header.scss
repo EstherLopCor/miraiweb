@@ -1,7 +1,7 @@
 .page {
   &__text {
     width: 100%;
-    height: 25vh;
+    height: 200px;
     background-image: url(..//images/room.jpg);
     @include background-images;
     display: flex;
