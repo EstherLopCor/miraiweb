@@ -59,35 +59,53 @@
   display: none;
   position: absolute;
   z-index: 1;
-  //padding-top: -250px;
   left: 650px;
-  top: 300px;
+  top: 295px;
   height: 300px;
   width: 300px;
   overflow: auto;
 }
 
-.modalContainer .modal-content {
+.modal-content {
   background-color: $color-primary;
-  border: $color-secondary 5px solid;
+  border: $color-secondary 4px solid;
   border-radius: 7px;
   width: 300px;
   padding: 20px 20px 10px 20px;
   position: absolute;
+  &::after,
+  &::before {
+    top: 100%;
+    left: 50px;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &:after {
+    border-top-color: $color-primary;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+  &::before {
+    border-top-color: $color-secondary;
+    border-width: 15px;
+    margin-left: -15px;
+  }
 }
 
-.modalContainer .close {
+.close {
   position: absolute;
   left: 275px;
   top: 0px;
   color: $color-secondary;
   text-decoration: none;
   font-weight: 700;
-}
-
-.modalContainer .close:hover,
-.modalContainer .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+  &:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
