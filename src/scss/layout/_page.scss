@@ -3,7 +3,8 @@
   &__article {
     display: flex;
     flex-direction: row;
-    margin: 3rem 20em 3em 20em;
+    margin: 3rem 20rem 3rem 20rem;
+    width: 800px;
 
     &--container {
       display: flex;
@@ -51,19 +52,16 @@
 
 // VENTANA MODAL
 
-.content {
-  text-transform: none;
-}
-
 .modalContainer {
   display: none;
   position: absolute;
   z-index: 1;
   left: 650px;
-  top: 295px;
+  top: 312px;
   height: 300px;
   width: 300px;
   overflow: auto;
+  text-transform: none;
 }
 
 .modal-content {
@@ -104,8 +102,6 @@
   text-decoration: none;
   font-weight: 700;
   &:focus {
-    color: #000;
-    text-decoration: none;
     cursor: pointer;
   }
 }
